@@ -1,0 +1,76 @@
+project:
+  type: website
+  resources:
+    - "html/"
+
+website:
+  title: "Global Health 340 Final Project"
+  search: true
+
+  navbar:
+    right:
+      - icon: github
+        text: "View on GitHub"
+        href: "https://github.com/tarmacjupiter/glb_hlth_final_project"
+  
+  sidebar:
+    style: "docked"
+    search: true
+    
+    contents:
+      - href: index.md
+        text: "How to Use"
+        icon: "bi-info-square"
+
+      - href: overview.md
+        text: "Project Overview"
+        icon: "bi-info-square"
+      - text: "---"
+      - href: paper.md
+        text: "Paper Analysis"
+        icon: "bi-clipboard"
+      
+      - text: "---"
+      - text: "Data Collection & Cleaning"
+        icon: "clipboard-data"
+      - href: notebooks/collecting_over_5_years.ipynb
+        text: "Collection (5 Years)"
+      - href: notebooks/data_cleaning.ipynb
+        text: "Data Cleaning"
+
+      - text: "---"
+      - text: "Project Analysis"
+        icon: "graph-up"
+        
+      - href: notebooks/data_analysis.ipynb 
+        text: "Sentiment Analysis"
+      - href: notebooks/topic_modeling.ipynb
+        text: "Topic Modeling"
+      - href: notebooks/data_word_frequency.ipynb
+        text: "Word Frequency"
+      - href: notebooks/covid_specific_data.ipynb
+        text: "COVID Stressor Analysis"
+      - href: notebooks/comparing_subreddits.ipynb
+        text: "Comparing Subreddits"
+
+      - text: "---"
+      - href: raw_data.ipynb
+        text: Raw Data
+        
+    page-footer:
+    left: "A final project for Global Health 340."
+    right:
+      - icon: github
+        text: "View on GitHub"
+        href: "https://github.com/tarmacjupiter/glb_hlth_final_project"
+
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: darkly
+    code-fold: true
+    code-tools: true
+    code-copy: true
+    toc: true
+    toc-depth: 3

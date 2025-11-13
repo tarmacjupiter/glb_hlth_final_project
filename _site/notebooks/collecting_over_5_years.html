@@ -1,0 +1,1581 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.550">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Global Health 340 Final Project - Collecting Data over 5 years, start of COVID to now</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar docked nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Global Health 340 Final Project</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="https://github.com/tarmacjupiter/glb_hlth_final_project"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text">View on GitHub</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/collecting_over_5_years.html">Collection (5 Years)</a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-info-square" role="img">
+</i> 
+ <span class="menu-text">Project Overview</span></a>
+  </div>
+</li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item">
+    <i class="bi bi-clipboard-data" role="img">
+</i> 
+ <span class="menu-text">Data Collection &amp; Cleaning</span>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../notebooks/collecting_over_5_years.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Collection (5 Years)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../notebooks/data_cleaning.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data Cleaning</span></a>
+  </div>
+</li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item">
+    <i class="bi bi-graph-up" role="img">
+</i> 
+ <span class="menu-text">Project Analysis</span>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../notebooks/data_analysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sentiment Analysis</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../notebooks/topic_modeling.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Topic Modeling</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../notebooks/data_word_frequency.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Word Frequency</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../notebooks/covid_specific_data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">COVID Stressor Analysis</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../notebooks/comparing_subreddits.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Comparing Subreddits</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#collecting-data-over-5-years-start-of-covid-to-now" id="toc-collecting-data-over-5-years-start-of-covid-to-now" class="nav-link active" data-scroll-target="#collecting-data-over-5-years-start-of-covid-to-now">Collecting Data over 5 years, start of COVID to now</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<div class="quarto-title-block"><div><h1 class="title">Collecting Data over 5 years, start of COVID to now</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li></ul></div></div>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="collecting-data-over-5-years-start-of-covid-to-now" class="level1">
+<h1>Collecting Data over 5 years, start of COVID to now</h1>
+<div id="b335eb71" class="cell" data-execution_count="1">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> requests</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> datetime</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> time</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> json</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<p>This code defines a function to fetch a list of Reddit posts from the Pushshift API. It searches a specific subreddit for posts made between a start_time and end_time, returning up to 100 of the oldest posts first. The function handles errors or empty results by returning an empty list.</p>
+<div id="bbaa2b27" class="cell" data-execution_count="2">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> get_pushshift_monthly_chunk(subreddit, start_time, end_time, limit<span class="op">=</span><span class="dv">100</span>):</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Fetch a single chunk of data from Pushshift API"""</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    base_url <span class="op">=</span> <span class="st">"https://api.pullpush.io/reddit/search/submission"</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    params <span class="op">=</span> {</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>        <span class="st">"subreddit"</span>: subreddit,</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>        <span class="st">"after"</span>: <span class="bu">int</span>(start_time.timestamp()),</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>        <span class="st">"before"</span>: <span class="bu">int</span>(end_time.timestamp()),</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>        <span class="st">"size"</span>: limit,  <span class="co"># Fetch up to 'limit' posts (max 100)</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>        <span class="st">"sort"</span>: <span class="st">"asc"</span>,</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>        <span class="st">"sort_type"</span>: <span class="st">"created_utc"</span>,</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">try</span>:</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>        response <span class="op">=</span> requests.get(base_url, params<span class="op">=</span>params)</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>        data <span class="op">=</span> response.json()</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="st">"data"</span> <span class="kw">not</span> <span class="kw">in</span> data <span class="kw">or</span> <span class="bu">len</span>(data[<span class="st">"data"</span>]) <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> []  <span class="co"># Return an empty list if no posts</span></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> data[<span class="st">"data"</span>]  <span class="co"># Return the list of posts found</span></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>    <span class="cf">except</span> <span class="pp">Exception</span> <span class="im">as</span> e:</span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"Error fetching chunk: </span><span class="sc">{</span>e<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> []  <span class="co"># Return an empty list on error</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<p>Alright, so to start my main data collection, I first set up these variables. I create an empty list called all_posts which is where I’ll store all the data as I gather it. I then define the total time window I want to analyze, setting the start_date to January 1, 2020, and the end_date to the current time.</p>
+<div id="1ecbfafb" class="cell" data-execution_count="3">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>all_posts <span class="op">=</span> []</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>start_date <span class="op">=</span> datetime.datetime(<span class="dv">2020</span>, <span class="dv">1</span>, <span class="dv">1</span>, tzinfo<span class="op">=</span>datetime.timezone.utc)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>end_date <span class="op">=</span> datetime.datetime.now(datetime.timezone.utc)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>current_start <span class="op">=</span> start_date</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<p>This is the main data collection loop from my collecting_over_5_years.ipynb notebook, which iterates month by month from January 2020 until the present. For each month, I loop through my three target subreddits (r/depression, r/mentalhealth, and r/Anxiety) and call the get_pushshift_monthly_chunk function to fetch 100 posts from each. I add these new posts to my main all_posts list and include a 3-second time.sleep call to avoid overwhelming the API.</p>
+<div id="0a47c8dc" class="cell" data-execution_count="4">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="ss">f"Collecting up to 100 posts per month from </span><span class="sc">{</span>start_date<span class="sc">.</span>date()<span class="sc">}</span><span class="ss"> to </span><span class="sc">{</span>end_date<span class="sc">.</span>date()<span class="sc">}</span><span class="ss">..."</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>subreddits_to_fetch <span class="op">=</span> [<span class="st">"depression"</span>, <span class="st">"mentalhealth"</span>, <span class="st">"Anxiety"</span>]</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> current_start <span class="op">&lt;</span> end_date:</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 1. Calculate the end of the current month</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> current_start.month <span class="op">==</span> <span class="dv">12</span>:</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>        next_month_start <span class="op">=</span> current_start.replace(</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>            year<span class="op">=</span>current_start.year <span class="op">+</span> <span class="dv">1</span>, month<span class="op">=</span><span class="dv">1</span>, day<span class="op">=</span><span class="dv">1</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>        )</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>        next_month_start <span class="op">=</span> current_start.replace(month<span class="op">=</span>current_start.month <span class="op">+</span> <span class="dv">1</span>, day<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>    current_end <span class="op">=</span> next_month_start <span class="op">-</span> datetime.timedelta(seconds<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 2. Ensure our end date doesn't go into the future</span></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> current_end <span class="op">&gt;</span> end_date:</span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>        current_end <span class="op">=</span> end_date</span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 3. Fetch the chunk for this month</span></span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"--- Fetching for </span><span class="sc">{</span>current_start<span class="sc">.</span>date()<span class="sc">}</span><span class="ss"> to </span><span class="sc">{</span>current_end<span class="sc">.</span>date()<span class="sc">}</span><span class="ss"> ---"</span>)</span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> subreddit_name <span class="kw">in</span> subreddits_to_fetch:</span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"Fetching r/</span><span class="sc">{</span>subreddit_name<span class="sc">}</span><span class="ss">..."</span>)</span>
+<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Call our modified function for this month's window</span></span>
+<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a>        posts_chunk <span class="op">=</span> get_pushshift_monthly_chunk(</span>
+<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a>            subreddit_name, current_start, current_end, limit<span class="op">=</span><span class="dv">100</span></span>
+<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a>        )</span>
+<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a>        all_posts.extend(posts_chunk)</span>
+<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"...found </span><span class="sc">{</span><span class="bu">len</span>(posts_chunk)<span class="sc">}</span><span class="ss"> posts. Total collected: </span><span class="sc">{</span><span class="bu">len</span>(all_posts)<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb4-36"><a href="#cb4-36" aria-hidden="true" tabindex="-1"></a>        time.sleep(<span class="dv">3</span>)</span>
+<span id="cb4-37"><a href="#cb4-37" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb4-38"><a href="#cb4-38" aria-hidden="true" tabindex="-1"></a>    current_start <span class="op">=</span> next_month_start</span>
+<span id="cb4-39"><a href="#cb4-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-40"><a href="#cb4-40" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">--- FINISHED ALL SEARCHES ---"</span>)</span>
+<span id="cb4-41"><a href="#cb4-41" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Successfully collected a total of </span><span class="sc">{</span><span class="bu">len</span>(all_posts)<span class="sc">}</span><span class="ss"> posts."</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Collecting up to 100 posts per month from 2020-01-01 to 2025-11-04...
+--- Fetching for 2020-01-01 to 2020-01-31 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 100
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 200
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 300
+--- Fetching for 2020-02-01 to 2020-02-29 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 400
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 500
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 600
+--- Fetching for 2020-03-01 to 2020-03-31 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 700
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 800
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 900
+--- Fetching for 2020-04-01 to 2020-04-30 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 1000
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 1100
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 1200
+--- Fetching for 2020-05-01 to 2020-05-31 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 1300
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 1400
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 1500
+--- Fetching for 2020-06-01 to 2020-06-30 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 1600
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 1700
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 1800
+--- Fetching for 2020-07-01 to 2020-07-31 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 1900
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 2000
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 2100
+--- Fetching for 2020-08-01 to 2020-08-31 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 2200
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 2300
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 2400
+--- Fetching for 2020-09-01 to 2020-09-30 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 2500
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 2600
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 2700
+--- Fetching for 2020-10-01 to 2020-10-31 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 2800
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 2900
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 3000
+--- Fetching for 2020-11-01 to 2020-11-30 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 3100
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 3200
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 3300
+--- Fetching for 2020-12-01 to 2020-12-31 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 3400
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 3500
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 3600
+--- Fetching for 2021-01-01 to 2021-01-31 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 3700
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 3800
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 3900
+--- Fetching for 2021-02-01 to 2021-02-28 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 4000
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 4100
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 4200
+--- Fetching for 2021-03-01 to 2021-03-31 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 4300
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 4400
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 4500
+--- Fetching for 2021-04-01 to 2021-04-30 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 4600
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 4700
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 4800
+--- Fetching for 2021-05-01 to 2021-05-31 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 4900
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 5000
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 5100
+--- Fetching for 2021-06-01 to 2021-06-30 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 5200
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 5300
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 5400
+--- Fetching for 2021-07-01 to 2021-07-31 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 5500
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 5600
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 5700
+--- Fetching for 2021-08-01 to 2021-08-31 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 5800
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 5900
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 6000
+--- Fetching for 2021-09-01 to 2021-09-30 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 6100
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 6200
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 6300
+--- Fetching for 2021-10-01 to 2021-10-31 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 6400
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 6500
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 6600
+--- Fetching for 2021-11-01 to 2021-11-30 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 6700
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 6800
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 6900
+--- Fetching for 2021-12-01 to 2021-12-31 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 7000
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 7100
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 7200
+--- Fetching for 2022-01-01 to 2022-01-31 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 7300
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 7400
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 7500
+--- Fetching for 2022-02-01 to 2022-02-28 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 7600
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 7700
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 7800
+--- Fetching for 2022-03-01 to 2022-03-31 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 7900
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 8000
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 8100
+--- Fetching for 2022-04-01 to 2022-04-30 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 8200
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 8300
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 8400
+--- Fetching for 2022-05-01 to 2022-05-31 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 8500
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 8600
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 8700
+--- Fetching for 2022-06-01 to 2022-06-30 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 8800
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 8900
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 9000
+--- Fetching for 2022-07-01 to 2022-07-31 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 9100
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 9200
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 9300
+--- Fetching for 2022-08-01 to 2022-08-31 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 9400
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 9500
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 9600
+--- Fetching for 2022-09-01 to 2022-09-30 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 9700
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 9800
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 9900
+--- Fetching for 2022-10-01 to 2022-10-31 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 10000
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 10100
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 10200
+--- Fetching for 2022-11-01 to 2022-11-30 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 10300
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 10400
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 10500
+--- Fetching for 2022-12-01 to 2022-12-31 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 10600
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 10700
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 10800
+--- Fetching for 2023-01-01 to 2023-01-31 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 10900
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 11000
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 11100
+--- Fetching for 2023-02-01 to 2023-02-28 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 11200
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 11300
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 11400
+--- Fetching for 2023-03-01 to 2023-03-31 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 11500
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 11600
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 11700
+--- Fetching for 2023-04-01 to 2023-04-30 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 11800
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 11900
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 12000
+--- Fetching for 2023-05-01 to 2023-05-31 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 12100
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 12200
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 12300
+--- Fetching for 2023-06-01 to 2023-06-30 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 12400
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 12500
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 12600
+--- Fetching for 2023-07-01 to 2023-07-31 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 12700
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 12800
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 12900
+--- Fetching for 2023-08-01 to 2023-08-31 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 13000
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 13100
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 13200
+--- Fetching for 2023-09-01 to 2023-09-30 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 13300
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 13400
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 13500
+--- Fetching for 2023-10-01 to 2023-10-31 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 13600
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 13700
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 13800
+--- Fetching for 2023-11-01 to 2023-11-30 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 13900
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 14000
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 14100
+--- Fetching for 2023-12-01 to 2023-12-31 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 14200
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 14300
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 14400
+--- Fetching for 2024-01-01 to 2024-01-31 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 14500
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 14600
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 14700
+--- Fetching for 2024-02-01 to 2024-02-29 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 14800
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 14900
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 15000
+--- Fetching for 2024-03-01 to 2024-03-31 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 15100
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 15200
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 15300
+--- Fetching for 2024-04-01 to 2024-04-30 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 15400
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 15500
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 15600
+--- Fetching for 2024-05-01 to 2024-05-31 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 15700
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 15800
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 15900
+--- Fetching for 2024-06-01 to 2024-06-30 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 16000
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 16100
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 16200
+--- Fetching for 2024-07-01 to 2024-07-31 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 16300
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 16400
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 16500
+--- Fetching for 2024-08-01 to 2024-08-31 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 16600
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 16700
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 16800
+--- Fetching for 2024-09-01 to 2024-09-30 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 16900
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 17000
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 17100
+--- Fetching for 2024-10-01 to 2024-10-31 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 17200
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 17300
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 17400
+--- Fetching for 2024-11-01 to 2024-11-30 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 17500
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 17600
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 17700
+--- Fetching for 2024-12-01 to 2024-12-31 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 17800
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 17900
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 18000
+--- Fetching for 2025-01-01 to 2025-01-31 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 18100
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 18200
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 18300
+--- Fetching for 2025-02-01 to 2025-02-28 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 18400
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 18500
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 18600
+--- Fetching for 2025-03-01 to 2025-03-31 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 18700
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 18800
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 18900
+--- Fetching for 2025-04-01 to 2025-04-30 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 19000
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 19100
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 19200
+--- Fetching for 2025-05-01 to 2025-05-31 ---
+Fetching r/depression...
+...found 100 posts. Total collected: 19300
+Fetching r/mentalhealth...
+...found 100 posts. Total collected: 19400
+Fetching r/Anxiety...
+...found 100 posts. Total collected: 19500
+--- Fetching for 2025-06-01 to 2025-06-30 ---
+Fetching r/depression...
+...found 0 posts. Total collected: 19500
+Fetching r/mentalhealth...
+...found 0 posts. Total collected: 19500
+Fetching r/Anxiety...
+...found 0 posts. Total collected: 19500
+--- Fetching for 2025-07-01 to 2025-07-31 ---
+Fetching r/depression...
+...found 0 posts. Total collected: 19500
+Fetching r/mentalhealth...
+...found 0 posts. Total collected: 19500
+Fetching r/Anxiety...
+...found 0 posts. Total collected: 19500
+--- Fetching for 2025-08-01 to 2025-08-31 ---
+Fetching r/depression...
+...found 0 posts. Total collected: 19500
+Fetching r/mentalhealth...
+...found 0 posts. Total collected: 19500
+Fetching r/Anxiety...
+...found 0 posts. Total collected: 19500
+--- Fetching for 2025-09-01 to 2025-09-30 ---
+Fetching r/depression...
+...found 0 posts. Total collected: 19500
+Fetching r/mentalhealth...
+...found 0 posts. Total collected: 19500
+Fetching r/Anxiety...
+...found 0 posts. Total collected: 19500
+--- Fetching for 2025-10-01 to 2025-10-31 ---
+Fetching r/depression...
+...found 0 posts. Total collected: 19500
+Fetching r/mentalhealth...
+...found 0 posts. Total collected: 19500
+Fetching r/Anxiety...
+...found 0 posts. Total collected: 19500
+--- Fetching for 2025-11-01 to 2025-11-04 ---
+Fetching r/depression...
+...found 0 posts. Total collected: 19500
+Fetching r/mentalhealth...
+...found 0 posts. Total collected: 19500
+Fetching r/Anxiety...
+...found 0 posts. Total collected: 19500
+
+--- FINISHED ALL SEARCHES ---
+Successfully collected a total of 19500 posts.</code></pre>
+</div>
+</div>
+<p>What does this data actually look like?</p>
+<div id="bac2ae66" class="cell" data-execution_count="8">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>all_posts[<span class="dv">0</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display" data-execution_count="8">
+<pre><code>{'all_awardings': [],
+ 'allow_live_comments': False,
+ 'archived': False,
+ 'author': 'bumblebeehoneycomb',
+ 'author_created_utc': 1493589289,
+ 'author_flair_background_color': None,
+ 'author_flair_css_class': None,
+ 'author_flair_richtext': [],
+ 'author_flair_template_id': None,
+ 'author_flair_text': None,
+ 'author_flair_text_color': None,
+ 'author_flair_type': 'text',
+ 'author_fullname': 't2_17jnok',
+ 'author_patreon_flair': False,
+ 'author_premium': False,
+ 'awarders': [],
+ 'can_gild': True,
+ 'can_mod_post': False,
+ 'category': None,
+ 'content_categories': None,
+ 'contest_mode': False,
+ 'created_utc': 1577836856,
+ 'discussion_type': None,
+ 'distinguished': None,
+ 'domain': 'self.depression',
+ 'edited': False,
+ 'gilded': 0,
+ 'gildings': {},
+ 'hidden': False,
+ 'id': 'eib0d8',
+ 'is_crosspostable': True,
+ 'is_meta': False,
+ 'is_original_content': False,
+ 'is_reddit_media_domain': False,
+ 'is_robot_indexable': True,
+ 'is_self': True,
+ 'is_video': False,
+ 'link_flair_background_color': '',
+ 'link_flair_css_class': None,
+ 'link_flair_richtext': [],
+ 'link_flair_text': None,
+ 'link_flair_text_color': 'dark',
+ 'link_flair_type': 'text',
+ 'locked': False,
+ 'media': None,
+ 'media_embed': {},
+ 'media_only': False,
+ 'no_follow': True,
+ 'num_comments': 8,
+ 'num_crossposts': 0,
+ 'over_18': False,
+ 'parent_whitelist_status': 'no_ads',
+ 'permalink': '/r/depression/comments/eib0d8/hows_everyone_doing_on_this_new_years_eve/',
+ 'pinned': False,
+ 'pwls': 0,
+ 'quarantine': False,
+ 'removal_reason': None,
+ 'removed_by': None,
+ 'removed_by_category': None,
+ 'retrieved_on': 1586941625,
+ 'score': 5,
+ 'secure_media': None,
+ 'secure_media_embed': {},
+ 'selftext': "I know as well as everyone new years makes you think back and regret and wonder why you're still here one more year..\n\nWell i'm spending new years alone at home and I'm just wondering how everyone is doing and if you need a place to vent or talk this can be a safe place for you. \n\nHappy new year everyone. We made it and maybe things will get better.",
+ 'send_replies': True,
+ 'spoiler': False,
+ 'stickied': False,
+ 'subreddit': 'depression',
+ 'subreddit_id': 't5_2qqqf',
+ 'subreddit_name_prefixed': 'r/depression',
+ 'subreddit_subscribers': 623857,
+ 'subreddit_type': 'public',
+ 'suggested_sort': 'confidence',
+ 'thumbnail': 'self',
+ 'thumbnail_height': None,
+ 'thumbnail_width': None,
+ 'title': 'Hows everyone doing on this new years eve?',
+ 'total_awards_received': 0,
+ 'treatment_tags': [],
+ 'url': 'https://www.reddit.com/r/depression/comments/eib0d8/hows_everyone_doing_on_this_new_years_eve/',
+ 'whitelist_status': 'no_ads',
+ 'wls': 0}</code></pre>
+</div>
+</div>
+<p>Let’s clean this data so we can work for it later and only pull the relevant information we need.</p>
+<div id="bbb8f55d" class="cell" data-execution_count="12">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>cleaned_data <span class="op">=</span> []</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> post <span class="kw">in</span> all_posts:</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>    cleaned_data.append({</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>        <span class="st">"title"</span>: post[<span class="st">"title"</span>],</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>        <span class="st">"content"</span>: post[<span class="st">"selftext"</span>],</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>        <span class="st">"date"</span>: post[<span class="st">"created_utc"</span>],</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>        <span class="st">"subreddit"</span>: post[<span class="st">"subreddit"</span>],</span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>        <span class="st">"link"</span>: post[<span class="st">"url"</span>]</span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>    })</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<div id="d0a23dd0" class="cell" data-execution_count="15">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> csv</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<p>Write this data (JSON) to a CSV file.</p>
+<div id="c3318d6c" class="cell" data-execution_count="16">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>fieldnames <span class="op">=</span> [<span class="st">"title"</span>, <span class="st">"content"</span>, <span class="st">"date"</span>, <span class="st">"subreddit"</span>, <span class="st">"link"</span>]</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">"reddit_data.csv"</span>, <span class="st">"w"</span>, newline<span class="op">=</span><span class="st">''</span>) <span class="im">as</span> csvfile:</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>    writer <span class="op">=</span> csv.DictWriter(csvfile, fieldnames<span class="op">=</span>fieldnames)</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>    writer.writeheader()</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>    writer.writerows(cleaned_data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  const viewSource = window.document.getElementById('quarto-view-source') ||
+                     window.document.getElementById('quarto-code-tools-source');
+  if (viewSource) {
+    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+    viewSource.addEventListener("click", function(e) {
+      if (sourceUrl) {
+        // rstudio viewer pane
+        if (/\bcapabilities=\b/.test(window.location)) {
+          window.open(sourceUrl);
+        } else {
+          window.location.href = sourceUrl;
+        }
+      } else {
+        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+        modal.show();
+      }
+      return false;
+    });
+  }
+  function toggleCodeHandler(show) {
+    return function(e) {
+      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+      for (let i=0; i<detailsSrc.length; i++) {
+        const details = detailsSrc[i].parentElement;
+        if (show) {
+          details.open = true;
+        } else {
+          details.removeAttribute("open");
+        }
+      }
+      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+      const fromCls = show ? "hidden" : "unhidden";
+      const toCls = show ? "unhidden" : "hidden";
+      for (let i=0; i<cellCodeDivs.length; i++) {
+        const codeDiv = cellCodeDivs[i];
+        if (codeDiv.classList.contains(fromCls)) {
+          codeDiv.classList.remove(fromCls);
+          codeDiv.classList.add(toCls);
+        } 
+      }
+      return false;
+    }
+  }
+  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+  if (hideAllCode) {
+    hideAllCode.addEventListener("click", toggleCodeHandler(false));
+  }
+  const showAllCode = window.document.getElementById("quarto-show-all-code");
+  if (showAllCode) {
+    showAllCode.addEventListener("click", toggleCodeHandler(true));
+  }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
