@@ -20,10 +20,6 @@ website:
     
     contents:
       - href: index.md
-        text: "How to Use"
-        icon: "bi-info-square"
-
-      - href: overview.md
         text: "Project Overview"
         icon: "bi-info-square"
       - text: "---"
@@ -56,6 +52,7 @@ website:
       - text: "---"
       - href: raw_data.ipynb
         text: Raw Data
+        icon: "bi-database"
         
     page-footer:
     left: "A final project for Global Health 340."
