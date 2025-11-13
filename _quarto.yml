@@ -1,5 +1,6 @@
 project:
   type: website
+  output-dir: docs
   resources:
     - "html/"
 
@@ -52,7 +53,6 @@ website:
         text: "COVID Stressor Analysis"
       - href: notebooks/comparing_subreddits.ipynb
         text: "Comparing Subreddits"
-
       - text: "---"
       - href: raw_data.ipynb
         text: Raw Data
