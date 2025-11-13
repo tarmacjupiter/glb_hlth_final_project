@@ -2,6 +2,8 @@
 
 Author: Anthony Behery
 
+https://tarmacjupiter.github.io/glb_hlth_final_project/
+
 ## Project Overview
 
 This project analyzes sentiment patterns in Reddit mental health communities (r/depression, r/mentalhealth, r/Anxiety) over a 5-year period (2020-2025) to understand how the COVID-19 pandemic affected mental health discourse online. The analysis uses VADER sentiment analysis and tracks specific COVID-related terminology to measure changes in community sentiment before, during, and after the pandemic.
